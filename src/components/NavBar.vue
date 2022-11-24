@@ -1,5 +1,5 @@
 <template>
-    <!-- component -->
+    
     <nav class="flex justify-between px-20 py-4 items-center bg-gray-900">
         <div class="basis-1 flex flex-col items-center">
             <!--<img src="../assets/img/logo.png" alt="" class="logo">-->
