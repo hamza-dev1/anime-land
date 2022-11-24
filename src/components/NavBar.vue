@@ -1,6 +1,6 @@
 <template>
     
-    <nav class="flex justify-between px-20 py-4 items-center bg-gray-900">
+    <nav class="flex justify-between px-20 py-4 items-center bg-slate-900">
         <div class="basis-1 flex flex-col items-center">
             <!--<img src="../assets/img/logo.png" alt="" class="logo">-->
             <h1 class="text-2xl text-white font-bold">AnimeLand</h1>
