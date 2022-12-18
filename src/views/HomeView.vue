@@ -1,8 +1,10 @@
 <template>
 
     <div class="w-full">
-        <div class="h-screen flex lg:mt-10">
-            <div class="h-5/6 md:h-3/5 w-screen bg-slate-700 lg:divide-x divide-slate-600 text-white lg:rounded-[20px] lg:flex">
+        <div class="h-screen lg:mt-10">
+            <div class="
+                h-5/6 
+                md:h-3/5 w-full bg-slate-700 lg:divide-x divide-slate-600 text-white lg:rounded-[20px] lg:flex">
                 <img 
                     src="../assets/img/header-bg.png" alt="" 
                     class="p-5 object-contain basis-0 hidden lg:inline-block header-img">
@@ -22,6 +24,10 @@
                     </div>
                 </div>
             </div>
+            <div class="content mt-6">
+                <!-- I stopped here!! -->
+                <widget />
+            </div>
         </div>
     </div>
 
@@ -29,14 +35,15 @@
 
 <script>
 import NavBar from '@/components/NavBar'
+import Widget from '@/components/Widget'
 import axiosClient from '@/utils/axiosClient'
 import { CardsService } from '@/services/CardsService'
-import { onMounted } from '@vue/runtime-core'
 
 export default {
     name: 'Home',
     components: {  
         NavBar,
+        Widget
     },
     setup() {
         const headersCardContent = [
@@ -44,7 +51,8 @@ export default {
         ]
 
         return {
-            headersCardContent
+            headersCardContent,
+            Widget
         }
     }
 }
